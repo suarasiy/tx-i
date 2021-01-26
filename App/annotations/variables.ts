@@ -1,4 +1,7 @@
-let apples: number = 5;
+// Type Inference
+let apples = 5;
+
+// Type Annotations
 let speed: string = 'fast';
 let hasName: boolean = true;
 
