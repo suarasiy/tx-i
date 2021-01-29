@@ -33,3 +33,24 @@ const throwError = (message: string): void => {
     throw new Error(message);
   }
 };
+
+const todaysWeather = {
+  date: new Date(),
+  weather: 'Sunny',
+};
+
+// Destructuring with annotations always separate with two separated statements
+// ({ date, weather }) -> destructuring
+// { date: Date, weather: string } -> actual annotations
+const logWeather = ({
+  date,
+  weather,
+}: {
+  date: Date;
+  weather: string;
+}): void => {
+  console.log(date);
+  console.log(weather);
+};
+
+logWeather(todaysWeather);
